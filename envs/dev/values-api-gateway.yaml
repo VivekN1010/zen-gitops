@@ -1,13 +1,8 @@
 replicaCount: 1
 fullnameOverride: api-gateway
 image:
-<<<<<<< HEAD
-  repository: 873135413040.dkr.ecr.us-east-1.amazonaws.com/api-gateway
-  tag: sha-9623f5e
-=======
   repository: 557358104748.dkr.ecr.us-east-1.amazonaws.com/api-gateway
   tag: sha-58ffbb1
->>>>>>> 7010931 (changing reponame,rds,awsaccountID to my own values)
   pullPolicy: Always
 service:
   type: ClusterIP
