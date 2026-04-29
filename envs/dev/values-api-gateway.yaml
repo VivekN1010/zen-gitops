@@ -2,7 +2,7 @@ replicaCount: 1
 fullnameOverride: api-gateway
 image:
   repository: 557358104748.dkr.ecr.us-east-1.amazonaws.com/api-gateway
-  tag: sha-58ffbb1
+  tag: sha-9623f5e
   pullPolicy: Always
 service:
   type: ClusterIP
@@ -25,7 +25,7 @@ resources:
 autoscaling:
   enabled: false
   minReplicas: 1
-  maxReplicas: 4
+  maxReplicas: 3
   targetCPUUtilizationPercentage: 70
 livenessProbe:
   path: /actuator/health
