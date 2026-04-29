@@ -1,8 +1,13 @@
 replicaCount: 1
 fullnameOverride: notification-service
 image:
+<<<<<<< HEAD
   repository: 873135413040.dkr.ecr.us-east-1.amazonaws.com/notification-service
   tag: sha-9623f5e
+=======
+  repository: 557358104748.dkr.ecr.us-east-1.amazonaws.com/notification-service
+  tag: sha-5017de5
+>>>>>>> 7010931 (changing reponame,rds,awsaccountID to my own values)
   pullPolicy: Always
 service:
   type: ClusterIP
@@ -49,7 +54,7 @@ configmap:
   SMTP_HOST: "smtp.example.com"
   SMTP_PORT: "587"
   EMAIL_FROM: "noreply-dev@example.com"
-  DB_HOST: pharma-dev-postgres.cs3c424yurej.us-east-1.rds.amazonaws.com
+  DB_HOST: pharma-dev-postgres.cqrao4yccozs.us-east-1.rds.amazonaws.com
 envFrom:
   - secretRef:
       name: db-credentials
